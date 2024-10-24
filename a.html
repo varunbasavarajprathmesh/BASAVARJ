@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cart-items {
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    background-image:url("image.jpg");
+    margin-right: 15px;
+}
+
+.item-details {
+    flex-grow: 1;
+}
+
+.quantity-input {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.remove-button {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.remove-button:hover {
+    background-color: #c9302c;
+}
+
+.cart-summary {
+    border-top: 1px solid #ccc;
+    padding-top: 15px;
+}
+
+.checkout-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #f90;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.checkout-button:hover {
+    background-color: #e68a00;
+}
+
+</style>
+<body>
+    <div class="container">
+        <header>
+            <h1>Shopping Cart</h1>
+        </header>
+
+        <div class="cart-items">
+            <div class="cart-item">
+                <img src="image.jpg" alt="Product Image">
+                <div class="item-details">
+                    <h2>Product Title 1</h2>
+                    <p>Price: $29.99</p>
+                    <input type="number" value="1" min="1" class="quantity-input">
+                    <button class="remove-button">Remove</button>
+                </div>
+            </div>
+
+            <div class="cart-item">
+                <img src="img.jpg" alt="Product Image">
+                <div class="item-details">
+                    <h2>Product Title 2</h2>
+                    <p>Price: $49.99</p>
+                    <input type="number" value="1" min="1" class="quantity-input">
+                    <button class="remove-button">Remove</button>
+                </div>
+            </div>
+
+            <div class="cart-item">
+                <img src="adi.jpg" alt="Product Image">
+                <div class="item-details">
+                    <h2>Product Title 3</h2>
+                    <p>Price: $19.99</p>
+                    <input type="number" value="1" min="1" class="quantity-input">
+                    <button class="remove-button">Remove</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart-summary">
+            <h2>Cart Summary</h2>
+            <p>Total Items: <span id="total-items">3</span></p>
+            <p>Total Price: <span id="total-price">$99.97</span></p>
+            <button class="checkout-button">proceed to Checkout</button>
+        </div>
+    </div>
+</body>
+</html>
