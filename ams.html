@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Login</title>
+    
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+  background-image: url(666.jpg);
+   background-repeat: no-repeat;
+   background-size:1400px;
+    margin: 0;
+    padding: 10PX;
+}
+
+.container {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    /*background-image: url(555.jpg);*/
+   backface-visibility: hidden;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+   border: 1px solid #000000;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.signin-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #f90;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.signin-button:hover {
+    background-color: #e68a00;
+}
+
+.footer-links {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.footer-links a {
+    color: #0066c0;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+<body>
+   
+    <div class="container">
+        <h1>AMAZON SIGN IN</h1>
+        <form>
+            <div class="form-group">
+                <label for="email" style="color: #ffffff;">Email or mobile phone number</label>
+                <input type="text" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password" style="color: #ffffff;">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="signin-button"><a href="https://www.amazon.in/">CONTINUE</a></button>
+            <div class="footer-links">
+              <p><a href="#">Forgot your password?</a></p>  
+                <p style="color: #ffffff;">New to Amazon? <a href="https://www.amazon.in/ap/register?showRememberMe=true&openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.in%2F%3F_encoding%3DUTF8%26ref_%3Dnav_ya_signin&prevRID=1KF7X1M4CH34M7XB5HVD&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=inflex&openid.mode=checkid_setup&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=inflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0">Create your Amazon account</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
